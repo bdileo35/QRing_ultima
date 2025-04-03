@@ -1,3 +1,111 @@
+# Proyecto React Native con Expo
+
+## Configuración del Entorno
+
+### Requisitos Previos
+- Node.js (última versión LTS)
+- Git
+- Expo CLI (`npm install -g expo-cli`)
+- Cuenta en GitHub
+
+### Estructura del Proyecto
+```
+Ultima/
+├── assets/           # Recursos multimedia
+├── App.js           # Componente principal
+├── app.json         # Configuración de Expo
+├── babel.config.js  # Configuración de Babel
+├── package.json     # Dependencias y scripts
+└── README.md        # Documentación
+```
+
+## Comandos PowerShell
+
+### Inicialización del Proyecto
+```powershell
+# Limpiar directorio si es necesario
+rm -r -force *
+
+# Crear nuevo proyecto Expo
+npx create-expo-app .
+```
+
+### Desarrollo
+```powershell
+# Iniciar servidor de desarrollo
+npm start
+
+# Para plataformas específicas
+npm run android
+npm run ios
+npm run web
+```
+
+### Control de Versiones
+```powershell
+# Inicializar repositorio Git
+git init
+
+# Agregar archivos
+git add .
+
+# Commit inicial
+git commit -m "Inicio del proyecto"
+
+# Crear repositorio en GitHub y agregar remoto
+git remote add origin [URL_DEL_REPOSITORIO]
+
+# Subir cambios
+git push -u origin main
+```
+
+## Flujo de Trabajo
+
+1. **Desarrollo Local**
+   - Realizar cambios en el código
+   - Probar con `npm start`
+   - Verificar que todo funcione correctamente
+
+2. **Control de Versiones**
+   - Agregar cambios: `git add .`
+   - Crear commit: `git commit -m "Descripción de los cambios"`
+   - Subir a GitHub: `git push origin main`
+
+3. **Nuevo Proyecto Git**
+   - Crear nuevo repositorio en GitHub
+   - Actualizar URL remota: `git remote set-url origin [NUEVA_URL]`
+   - Subir código: `git push -u origin main`
+
+## Notas Importantes
+
+- Cada vez que se pruebe una funcionalidad y funcione correctamente, se debe:
+  1. Hacer commit de los cambios
+  2. Subir a GitHub
+  3. Documentar los cambios en el README si es necesario
+
+- Mantener el `package.json` actualizado con las dependencias necesarias
+
+- Usar `expo start --clear` si hay problemas con la caché
+
+## Solución de Problemas Comunes
+
+1. **Error de Caché**
+   ```powershell
+   expo start --clear
+   ```
+
+2. **Reinstalar Dependencias**
+   ```powershell
+   rm -r -force node_modules
+   npm install
+   ```
+
+3. **Limpiar Proyecto**
+   ```powershell
+   rm -r -force *
+   npx create-expo-app .
+   ```
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
