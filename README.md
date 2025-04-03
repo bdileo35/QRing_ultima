@@ -32,13 +32,13 @@ npx create-expo-app .
 
 ### Desarrollo
 ```powershell
-# Iniciar servidor de desarrollo
-npm start
+# Iniciar servidor de desarrollo (COMANDO CORRECTO)
+npx expo start
 
 # Para plataformas específicas
-npm run android
-npm run ios
-npm run web
+npx expo start --android
+npx expo start --ios
+npx expo start --web
 ```
 
 ### Control de Versiones
@@ -63,7 +63,7 @@ git push -u origin main
 
 1. **Desarrollo Local**
    - Realizar cambios en el código
-   - Probar con `npm start`
+   - Probar con `npx expo start` (COMANDO CORRECTO)
    - Verificar que todo funcione correctamente
 
 2. **Control de Versiones**
@@ -85,13 +85,13 @@ git push -u origin main
 
 - Mantener el `package.json` actualizado con las dependencias necesarias
 
-- Usar `expo start --clear` si hay problemas con la caché
+- Usar `npx expo start --clear` si hay problemas con la caché
 
 ## Solución de Problemas Comunes
 
 1. **Error de Caché**
    ```powershell
-   expo start --clear
+   npx expo start --clear
    ```
 
 2. **Reinstalar Dependencias**
